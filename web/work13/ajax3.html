@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+    function overLapped(){
+        var _id = $('#id').val();
+        $.ajax({
+            type:'POST',
+            url:'http://localhost:8080/member2',
+            dataType:'text',
+            data:{
+                id:_id,
+                command:'overLappedCheck'
+            },
+            async:false,
+            success:function(data, textStatus){
+                console.log(data);
+                if(data === 'usable'){
+                    alert('사용 가능한 ID 입니다.');
+                    $('#subBtn').prop("disabled", false);
+                    $('#id').prop('readonly', true);
+                }else{
+                    alert('사용 불가능한 ID 입니다.');
+                    $('#id').focus();
+                    $('#subBtn').prop("disabled", true);
+                }
+            },
+            error:function(d, t){
+                alert('error');
+            },
+            complete:function(d, t){
+
+            }
+        })
+    }
+</script>
+<form name="frm" method="post">
+    <table>
+        <tr>
+            <td><label>아이디</label></td>
+            <td>
+                <input type="text" name="id" id="id"/>
+                <input type="button" onclick="overLapped()" value="중복 확인"/>
+            </td>
+        </tr>
+        <tr>
+            <td><label>패스워드</label></td>
+            <td><input type="password" name="pwd"/></td>
+        </tr>
+        <tr>
+            <td><label>이름</label></td>
+            <td><input type="text" name="name"/></td>
+        </tr>
+        <tr>
+            <td><label>이메일</label></td>
+            <td><input type="email" name="email"/></td>
+        </tr>
+    </table>
+    <input id="subBtn" type="submit" value="회원 가입" disabled/>
+</form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JspProject1:war exploded">
+    <output-path>$PROJECT_DIR$/web</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JspProject1/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JspProject1" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/mysql-connector-java-5.1.45-bin.jar" />
+          <element id="library" level="project" name="JAX-WS-Apache Axis" />
+          <element id="library" level="project" name="mysql-connector-java-8.0.19" />
+          <element id="library" level="project" name="sqljdbc42" />
+          <element id="library" level="project" name="tomcat:servlet:4.1.36" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/한주성/공부/jar/jstl/taglibs-standard-compat-1.2.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/한주성/공부/jar/jstl/taglibs-standard-impl-1.2.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/한주성/공부/jar/jstl/taglibs-standard-jstlel-1.2.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/한주성/공부/jar/jstl/taglibs-standard-spec-1.2.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/한주성/공부/jar/commons-fileupload-1.4-bin/commons-fileupload-1.4.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/한주성/공부/jar/commons-io-2.6/commons-io-2.6.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/한주성/공부/jsp_servlet_spring/006895-master/pro19/lib/cglib-nodep-2.1_3.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/한주성/공부/jar/json-simple-1.1.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/한주성/공부/jar/ojdbc6.jar" />
+          <element id="library" level="project" name="Spring-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Spring Batch-2.2.6" />
+          <element id="library" level="project" name="Spring Data JPA-2.2.4.RELEASE" />
+          <element id="library" level="project" name="Spring Integration-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Spring MVC-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Spring Security-5.2.1" />
+          <element id="library" level="project" name="Spring Web Services-2.0.2" />
+          <element id="library" level="project" name="Spring Webflow-2.4.0" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/한주성/공부/jsp_servlet_spring/006895-master/pro19/lib/commons-dbcp.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/한주성/공부/jsp_servlet_spring/006895-master/pro19/lib/commons-logging.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/한주성/공부/jsp_servlet_spring/006895-master/pro19/lib/commons-pool.jar" />
+          <element id="file-copy" path="$USER_HOME$/Desktop/한주성/공부/jsp_servlet_spring/006895-master/pro19/lib/spring.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

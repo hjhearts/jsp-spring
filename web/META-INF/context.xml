@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/">
+    <Resource
+        name="jdbc/mysql"
+        auth="Container"
+        type="javax.sql.DataSource"
+        driverClassName="com.mysql.cj.jdbc.Driver"
+        url="jdbc:mysql://127.0.0.1:3306/mydb?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC"
+        username="root"
+        password="1234"
+        maxActive="50"
+        maxWait="-1"/>
+    <Resource
+            name="jdbc/oracle"
+            auth="Container"
+            type="javax.sql.DataSource"
+            driverClassName="oracle.jdbc.OracleDriver"
+            url="jdbc:oracle:thin:@localhost:1521:orcl"
+            username="scott"
+            password="1234"
+            maxActive="50"
+            maxWait="-1"/>
+</Context>
+

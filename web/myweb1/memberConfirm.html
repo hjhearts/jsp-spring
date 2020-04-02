@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form name="addFrm">
+        <table>
+            <thead>
+                <th>Sign-Up Page</th>
+            </thead>
+            <tr>
+                <td><label>ID</label></td>
+                <td><input type="text" name="user_id"/></td>
+            </tr>
+            <tr>
+                <td><label>PASSWORD</label></td>
+                <td><input type="password" name="password"/></td>
+            </tr>
+            <tr>
+                <td><label>PASSWORD-CONFIRM</label></td>
+                <td><input type="password" name="password_confirm"/></td>
+            </tr>
+            <tr>
+                <td><label>NAME</label></td>
+                <td><input type="text" name="name"/></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td><input type="email" name="email" id="email"/><div id="alt" hidden>Email is not correct</div></td>
+            </tr>
+        </table>
+        <input type="hidden" name="command" value="addMember"/>
+        <input type="button" value="Sign-Up" onclick="fn_memberConfirm()"/>
+        <input type="reset" value="Reset"/>
+    </form>
+<script src="js/memberConfirm.js"></script>
+</body>
+</html>

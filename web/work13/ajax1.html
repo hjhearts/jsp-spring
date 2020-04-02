@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    function fn_process(){
+        $.ajax({
+            type:'get',
+            dataType:'text',
+            url:'http://localhost:8080/ajaxTest1',
+            data:{param:"Hello, jquery"},
+            success:function(data, textStatus){
+                $('#message').append(data);
+            },
+            error:function(data, textStatus){
+                alert('에러 발생');
+            },
+            complete:function(data, textStatus){
+                alert('작업 완료');
+            }
+        });
+    }
+</script>
+    <input type="button" value="전송" onclick="fn_process()"/>
+    <div id="message"></div>
+</body>
+</html>

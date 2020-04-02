@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    function fn_process(){
+        $.ajax({
+            type:'post',
+            async:false,
+            url:'http://localhost:8080/ajaxTest2',
+            dataType:'xml',
+            success:function(data, textStatus){
+                $(data).find("book").each(function(){
+                    var title = $(this).find('title').text();
+                    var writer = $(this).find('writer').text();
+                    var image = $(this).find('image').text();
+                    $('#bookInfo').append(
+                        "<p>" + title + "</p>"
+                        + "<p>" + writer + "</p>"
+                        + "<img src='" + image + "' alt='books'/>"
+                    );
+                });
+            },
+            error:function(data, textStatus){
+                alert('error');
+            },
+            complete(data, textStatus){
+                alert('success');
+            }
+        })
+    }
+</script>
+<input type="button" value="데이터 받기" onclick="fn_process()"/>
+<div id="bookInfo"></div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bookstore>
+    <book category="java">
+        <title>자바의 정석</title>
+        <author>남궁 성</author>
+        <year>2016</year>
+        <price>30000</price>
+    </book>
+    <book category="spring">
+        <title>토비의 스프링</title>
+        <author>이일민</author>
+        <year>2012</year>
+        <price>60000</price>
+    </book>
+</bookstore>
