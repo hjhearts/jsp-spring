@@ -15,4 +15,16 @@
             select * from t_member order by joinDate DESC
         ]]>
     </select>
+    <select id="selectName" resultType="String">
+        <![CDATA[
+            select name from t_member
+            where id = 'hong'
+        ]]>
+    </select>
+    <select id="selectPwd" resultType="int">
+        <![CDATA[
+            select pwd from t_member
+            where id = 'hong'
+        ]]>
+    </select>
 </mapper>
