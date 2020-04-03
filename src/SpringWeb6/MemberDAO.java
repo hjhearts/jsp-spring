@@ -4,8 +4,6 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-import org.apache.log4j.lf5.util.Resource;
-import org.apache.tomcat.util.file.ConfigurationSource;
 
 import java.io.Reader;
 import java.util.List;
