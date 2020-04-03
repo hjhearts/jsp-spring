@@ -29,19 +29,27 @@ public class MemberServlet extends HttpServlet {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
         MemberDAO dao = new MemberDAO();
-        /*
-        String name = dao.selectName();
-        int pwd = dao.selectPwd();
-        PrintWriter out = response.getWriter();
-        out.println("<script>");
-        out.println("alert('이름 : " + name + "');");
-        out.println("alert('패스워드 : " + pwd + "');");
-        out.println("</script>");
-
-         */
-        List<MemberVO> membersList = dao.selectAllMemberList();
-        request.setAttribute("membersList", membersList);
-        RequestDispatcher dis = request.getRequestDispatcher("spring2/listMembers.jsp");
+        String action = request.getParameter("action");
+        String nextPage;
+        if(action == null || action.equals("listMembers")){
+            List<MemberVO> membersList = dao.selectAllMemberList();
+            request.setAttribute("membersList", membersList);
+            nextPage = "spring2/listMembers.jsp";
+        }else if(action.equals("selectMemberById")){
+            String id = request.getParameter("value");
+            MemberVO memberVO = dao.selectMemberById(id);
+            request.setAttribute("member", memberVO);
+            nextPage = "spring2/memberInfo.jsp";
+        }else if(action.equals("selectMemberByPwd")){
+            System.out.println("패스워드로 찾기");
+            String pwd = request.getParameter("value");
+            List<MemberVO> membersList = dao.selectMemberByPwd(pwd);
+            request.setAttribute("membersList", membersList);
+            nextPage = "spring2/listMembers.jsp";
+        }else{
+            nextPage = "";
+        }
+        RequestDispatcher dis = request.getRequestDispatcher(nextPage);
         dis.forward(request, response);
     }
 }

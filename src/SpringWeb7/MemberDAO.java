@@ -28,14 +28,14 @@ public class MemberDAO {
         SqlSession sqlSession = sqlMapper.openSession();
         return sqlSession.selectList("mapper.member.selectAllMemberList");
     }
-    public String selectName(){
+    public List<MemberVO> selectMemberByPwd(String pwd){
         sqlMapper = getInstance();
         SqlSession sqlSession = sqlMapper.openSession();
-        return sqlSession.selectOne("mapper.member.selectName");
+        return sqlSession.selectList("mapper.member.selectMemberByPwd", pwd);
     }
-    public int selectPwd(){
+    public MemberVO selectMemberById(String id){
         sqlMapper = getInstance();
         SqlSession sqlSession = sqlMapper.openSession();
-        return sqlSession.selectOne("mapper.member.selectPwd");
+        return sqlSession.selectOne("mapper.member.selectMemberById", id);
     }
 }
