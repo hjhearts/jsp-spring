@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
+import java.util.Map;
 
 @WebServlet("/mem2.do")
 public class MemberServlet extends HttpServlet {
@@ -28,6 +29,7 @@ public class MemberServlet extends HttpServlet {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
         MemberDAO dao = new MemberDAO();
+        /*
         String name = dao.selectName();
         int pwd = dao.selectPwd();
         PrintWriter out = response.getWriter();
@@ -35,5 +37,11 @@ public class MemberServlet extends HttpServlet {
         out.println("alert('이름 : " + name + "');");
         out.println("alert('패스워드 : " + pwd + "');");
         out.println("</script>");
+
+         */
+        List<MemberVO> membersList = dao.selectAllMemberList();
+        request.setAttribute("membersList", membersList);
+        RequestDispatcher dis = request.getRequestDispatcher("spring2/listMembers.jsp");
+        dis.forward(request, response);
     }
 }
