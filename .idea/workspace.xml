@@ -6,13 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e18cfa77-2898-422b-bf8b-ac817b2f398e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/spring2/memberFind.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/spring2/memberInfo.jsp" afterDir="false" />
+    <list default="true" id="e18cfa77-2898-422b-bf8b-ac817b2f398e" name="Default Changelist" comment="#{key} 를 이용한 조건형 select문">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mybatis/mapper/member.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mybatis/mapper/member.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpringWeb7/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpringWeb7/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpringWeb7/MemberServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpringWeb7/MemberServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -731,7 +726,7 @@
       <workItem from="1585617252306" duration="26763000" />
       <workItem from="1585785258761" duration="3945000" />
       <workItem from="1585806812439" duration="7506000" />
-      <workItem from="1585874851597" duration="14026000" />
+      <workItem from="1585874851597" duration="14420000" />
     </task>
     <task id="LOCAL-00001" summary="first upload">
       <created>1585881513967</created>
@@ -761,11 +756,35 @@
       <option name="project" value="LOCAL" />
       <updated>1585889656791</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="#{key} 를 이용한 조건형 select문">
+      <created>1585893171201</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585893171201</updated>
+    </task>
+    <task id="LOCAL-00006" summary="#{key} 를 이용한 조건형 select문">
+      <created>1585893238493</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585893238493</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -784,7 +803,8 @@
     <MESSAGE value="first upload" />
     <MESSAGE value="member.xml 의 mapping을 변경하여 SpringWeb7 패키지가 동작" />
     <MESSAGE value="member.xml 의 resultMap 태그를 java.util.HashMap으로 설정" />
-    <option name="LAST_COMMIT_MESSAGE" value="member.xml 의 resultMap 태그를 java.util.HashMap으로 설정" />
+    <MESSAGE value="#{key} 를 이용한 조건형 select문" />
+    <option name="LAST_COMMIT_MESSAGE" value="#{key} 를 이용한 조건형 select문" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="188" key="#HTTP_Proxy" timestamp="1585533724583">
@@ -871,10 +891,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584929309809" />
-    <state x="811" y="43" key="CommitChangelistDialog2" timestamp="1585893169686">
+    <state x="811" y="43" key="CommitChangelistDialog2" timestamp="1585893504233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="811" y="43" key="CommitChangelistDialog2/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893169686" />
+    <state x="811" y="43" key="CommitChangelistDialog2/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893504233" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1585875814255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
