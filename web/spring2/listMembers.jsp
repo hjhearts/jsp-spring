@@ -20,6 +20,8 @@
             <th>이름</th>
             <th>이메일</th>
             <th>가입일자</th>
+            <th>수정</th>
+            <th>삭제</th>
         </tr>
         <c:forEach var="member" items="${membersList}">
             <tr>
@@ -29,6 +31,7 @@
                 <td>${member.email}</td>
                 <td>${member.joinDate}</td>
                 <td><a href="${pageContext.request.contextPath}/mem2.do?action=updateForm&id=${member.id}">수정</a></td>
+                <td><a href="${pageContext.request.contextPath}/mem2.do?action=deleteMember&id=${member.id}">삭제</a></td>
             </tr>
         </c:forEach>
     </table>

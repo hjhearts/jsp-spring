@@ -45,11 +45,16 @@ public class MemberDAO {
         sqlSession.commit();
         return result;
     }
-    public int updateMember(MemberVO vo){
+    public void updateMember(MemberVO vo){
         sqlMapper = getInstance();
         SqlSession sqlSession = sqlMapper.openSession();
-        int result = sqlSession.update("mapper.member.updateMember",vo);
+        sqlSession.update("mapper.member.updateMember",vo);
         sqlSession.commit();
-        return result;
+    }
+    public void deleteMember(String id){
+        sqlMapper = getInstance();
+        SqlSession sqlSession = sqlMapper.openSession();
+        sqlSession.delete("mapper.member.deleteMember", id);
+        sqlSession.commit();
     }
 }

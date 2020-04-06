@@ -72,6 +72,10 @@ public class MemberServlet extends HttpServlet {
             nextPage = "mem2.do?action=listMembers";
         }else if(action.equals("updateForm")){
             nextPage = "spring2/updateForm.jsp";
+        }else if(action.equals("deleteMember")){
+            String id = request.getParameter("id");
+            dao.deleteMember(id);
+            nextPage = "mem2.do?action=listMembers";
         }
         RequestDispatcher dis = request.getRequestDispatcher(nextPage);
         dis.forward(request, response);
