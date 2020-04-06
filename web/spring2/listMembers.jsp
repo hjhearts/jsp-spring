@@ -36,5 +36,6 @@
         </c:forEach>
     </table>
 <a href="${pageContext.request.contextPath}/member/memberForm.do">회원가입</a>
+<a href="${pageContext.request.contextPath}/mem2.do?action=searchMemberForm">회원 검색</a>
 </body>
 </html>

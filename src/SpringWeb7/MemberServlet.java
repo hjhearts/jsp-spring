@@ -76,6 +76,18 @@ public class MemberServlet extends HttpServlet {
             String id = request.getParameter("id");
             dao.deleteMember(id);
             nextPage = "mem2.do?action=listMembers";
+        }else if(action.equals("searchMember")){
+            System.out.println("searchMember on");
+            String name = request.getParameter("name");
+            String email = request.getParameter("email");
+            MemberVO searchVO = new MemberVO();
+            searchVO.setName(name);
+            searchVO.setEmail(email);
+            List<MemberVO> listMember = dao.searchMember(searchVO);
+            request.setAttribute("membersList", listMember);
+            nextPage = "spring2/listMembers.jsp";
+        }else if(action.equals("searchMemberForm")){
+            nextPage = "spring2/searchMember.jsp";
         }
         RequestDispatcher dis = request.getRequestDispatcher(nextPage);
         dis.forward(request, response);

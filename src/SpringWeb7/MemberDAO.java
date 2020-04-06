@@ -57,4 +57,9 @@ public class MemberDAO {
         sqlSession.delete("mapper.member.deleteMember", id);
         sqlSession.commit();
     }
+    public List<MemberVO> searchMember(MemberVO vo){
+        sqlMapper = getInstance();
+        SqlSession sqlSession = sqlMapper.openSession();
+        return sqlSession.selectList("mapper.member.searchMember", vo);
+    }
 }

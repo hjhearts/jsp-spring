@@ -46,4 +46,18 @@
             where id = #{id}
         ]]>
     </delete>
+    <select id="searchMember" parameterType="memberVO" resultMap="memResult">
+        <![CDATA[
+            select * from t_member
+        ]]>
+        <where>
+            <if test="name != null and name != ''">
+                name = #{name}
+            </if>
+            <if test="email != null and email != ''">
+                and email = #{email}
+            </if>
+        </where>
+        order by joinDate desc
+    </select>
 </mapper>
