@@ -8,6 +8,14 @@ public class MemberVO {
     private String name;
     private String email;
     private Date joinDate;
+    public MemberVO() {
+    }
+    public MemberVO(String id, String pwd, String name, String email) {
+        this.id = id;
+        this.pwd = pwd;
+        this.name = name;
+        this.email = email;
+    }
 
     public String getId() {
         return id;

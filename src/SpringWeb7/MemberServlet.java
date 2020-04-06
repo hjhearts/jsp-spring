@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -88,6 +89,22 @@ public class MemberServlet extends HttpServlet {
             nextPage = "spring2/listMembers.jsp";
         }else if(action.equals("searchMemberForm")){
             nextPage = "spring2/searchMember.jsp";
+        }else if(action.equals("selectForEach")){
+            List<String> nameList = new ArrayList<>();
+            nameList.add("홍길동");
+            nameList.add("관리자");
+            nameList.add("한주성");
+            List<MemberVO> membersList = dao.selectForEach(nameList);
+            request.setAttribute("membersList", membersList);
+            nextPage = "spring2/listMembers.jsp";
+        }else if(action.equals("insertForEach")){
+            List<MemberVO> memberList = new ArrayList<>();
+            memberList.add(new MemberVO("test01", "testPwd01", "테스트1", "test1@test.com"));
+            memberList.add(new MemberVO("test02", "testPwd02", "테스트2", "test2@test.com"));
+            memberList.add(new MemberVO("test03", "testPwd03", "테스트3", "test3@test.com"));
+            memberList.add(new MemberVO("test04", "testPwd04", "테스트4", "test4@test.com"));
+            int status = dao.insertForEach(memberList);
+            nextPage = "mem2.do?action=listMembers";
         }
         RequestDispatcher dis = request.getRequestDispatcher(nextPage);
         dis.forward(request, response);

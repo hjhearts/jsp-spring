@@ -4,6 +4,7 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.springframework.test.context.jdbc.Sql;
 
 import java.io.Reader;
 import java.util.List;
@@ -61,5 +62,17 @@ public class MemberDAO {
         sqlMapper = getInstance();
         SqlSession sqlSession = sqlMapper.openSession();
         return sqlSession.selectList("mapper.member.searchMember", vo);
+    }
+    public List<MemberVO> selectForEach(List<String> nameList){
+        sqlMapper = getInstance();
+        SqlSession sqlSession = sqlMapper.openSession();
+        return sqlSession.selectList("mapper.member.selectForEach", nameList);
+    }
+    public int insertForEach(List<MemberVO> memberList){
+        sqlMapper = getInstance();
+        SqlSession sqlSession = sqlMapper.openSession();
+        int status = sqlSession.insert("mapper.member.insertForEach", memberList);
+        sqlSession.commit();
+        return status;
     }
 }
