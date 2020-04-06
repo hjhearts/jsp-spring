@@ -12,7 +12,7 @@
     <title>Title</title>
 </head>
 <body>
-    <form method="post" action="${pageContext.request.contextPath}/member/addMember.do">
+    <form method="post" action="${pageContext.request.contextPath}/mem2.do?action=insertMember">
         <table>
             <tr>
                 <td><label>아이디</label></td>

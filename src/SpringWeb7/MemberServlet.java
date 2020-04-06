@@ -30,7 +30,7 @@ public class MemberServlet extends HttpServlet {
         response.setContentType("text/html;charset=utf-8");
         MemberDAO dao = new MemberDAO();
         String action = request.getParameter("action");
-        String nextPage;
+        String nextPage= "";
         if(action == null || action.equals("listMembers")){
             List<MemberVO> membersList = dao.selectAllMemberList();
             request.setAttribute("membersList", membersList);
@@ -46,8 +46,18 @@ public class MemberServlet extends HttpServlet {
             List<MemberVO> membersList = dao.selectMemberByPwd(pwd);
             request.setAttribute("membersList", membersList);
             nextPage = "spring2/listMembers.jsp";
-        }else{
-            nextPage = "";
+        }else if(action.equals("insertMember")){
+            String id = request.getParameter("id");
+            String pwd = request.getParameter("pwd");
+            String name = request.getParameter("name");
+            String email = request.getParameter("email");
+            MemberVO addVO = new MemberVO();
+            addVO.setId(id);
+            addVO.setPwd(pwd);
+            addVO.setName(name);
+            addVO.setEmail(email);
+            int status = dao.insertMember(addVO);
+            nextPage = "mem2.do?action=listMembers";
         }
         RequestDispatcher dis = request.getRequestDispatcher(nextPage);
         dis.forward(request, response);

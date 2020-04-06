@@ -6,8 +6,23 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e18cfa77-2898-422b-bf8b-ac817b2f398e" name="Default Changelist" comment="#{key} 를 이용한 조건형 select문">
+    <list default="true" id="e18cfa77-2898-422b-bf8b-ac817b2f398e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JspProject1/Mybatis/mapper/member.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JspProject1/Mybatis/mapper/member.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JspProject1/SpringWeb7/MemberDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JspProject1/SpringWeb7/MemberDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JspProject1/SpringWeb7/MemberServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JspProject1/SpringWeb7/MemberServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JspProject1/example/iscu/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JspProject1/example/iscu/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mybatis/mapper/member.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mybatis/mapper/member.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpringWeb7/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpringWeb7/MemberDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpringWeb7/MemberServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpringWeb7/MemberServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/example/iscu/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/example/iscu/OrderedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/Mybatis/mapper/member.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/Mybatis/mapper/member.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/SpringWeb7/MemberDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/SpringWeb7/MemberDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/SpringWeb7/MemberServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/SpringWeb7/MemberServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/example/iscu/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/example/iscu/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/iscu/work01.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/iscu/work01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/spring2/memberForm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/spring2/memberForm.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,8 +115,8 @@
         <option value="spring-beans.schema" />
         <option value="HTML File" />
         <option value="Python Script" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -172,13 +187,13 @@
       <recent name="C:\Users\USER\IdeaProjects\JspProject1\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.new Tomcat">
-    <configuration name="CalcTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SpringWeb3.CalcTest" />
+  <component name="RunManager" selected="Application.PhoneManager">
+    <configuration name="CardGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.CardGame" />
       <module name="JspProject1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringWeb3.*" />
+          <option name="PATTERN" value="example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -212,12 +227,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MemberTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SpringWeb2.MemberTest1" />
+    <configuration name="PhoneManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.iscu.PhoneManager" />
       <module name="JspProject1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SpringWeb2.*" />
+          <option name="PATTERN" value="example.iscu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -646,23 +661,23 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MemberTest1" />
-      <item itemvalue="Application.CalcTest" />
       <item itemvalue="Application.ForClass" />
       <item itemvalue="Application.Circle" />
+      <item itemvalue="Application.CardGame" />
       <item itemvalue="Bash.han.sh" />
       <item itemvalue="Smart Tomcat.smart Tomcat" />
       <item itemvalue="Tomcat Server.new Tomcat" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.211" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.21(2)" />
+      <item itemvalue="Application.PhoneManager" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PhoneManager" />
+        <item itemvalue="Application.CardGame" />
         <item itemvalue="Application.Circle" />
         <item itemvalue="Bash.han.sh" />
         <item itemvalue="Application.ForClass" />
-        <item itemvalue="Application.CalcTest" />
-        <item itemvalue="Application.MemberTest1" />
       </list>
     </recent_temporary>
   </component>
@@ -675,6 +690,11 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:Oracle - @localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:Oracle - @localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@18b510b2" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -726,7 +746,8 @@
       <workItem from="1585617252306" duration="26763000" />
       <workItem from="1585785258761" duration="3945000" />
       <workItem from="1585806812439" duration="7506000" />
-      <workItem from="1585874851597" duration="14420000" />
+      <workItem from="1585874851597" duration="22421000" />
+      <workItem from="1586130523982" duration="1301000" />
     </task>
     <task id="LOCAL-00001" summary="first upload">
       <created>1585881513967</created>
@@ -770,7 +791,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585893238493</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Mybatis 사용">
+      <created>1585893506759</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585893506759</updated>
+    </task>
+    <task id="LOCAL-00008" summary="#{key} 를 이용한 조건형 select문">
+      <created>1585893628323</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585893628323</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -803,10 +838,15 @@
     <MESSAGE value="first upload" />
     <MESSAGE value="member.xml 의 mapping을 변경하여 SpringWeb7 패키지가 동작" />
     <MESSAGE value="member.xml 의 resultMap 태그를 java.util.HashMap으로 설정" />
+    <MESSAGE value="Mybatis 사용" />
     <MESSAGE value="#{key} 를 이용한 조건형 select문" />
     <option name="LAST_COMMIT_MESSAGE" value="#{key} 를 이용한 조건형 select문" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="786" y="194" key="#Deployment" timestamp="1585893612532">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="786" y="194" key="#Deployment/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893612532" />
     <state x="552" y="188" key="#HTTP_Proxy" timestamp="1585533724583">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -891,10 +931,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="687" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584929309809" />
-    <state x="811" y="43" key="CommitChangelistDialog2" timestamp="1585893504233">
+    <state x="811" y="43" key="CommitChangelistDialog2" timestamp="1585893626851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="811" y="43" key="CommitChangelistDialog2/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893504233" />
+    <state x="811" y="43" key="CommitChangelistDialog2/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893626851" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1585875814255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -907,54 +947,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="412" width="265" height="218" key="Github.ShareDialog/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585813945190" />
-    <state width="1564" height="82" key="GridCell.Tab.0.bottom" timestamp="1585893098125">
+    <state width="963" height="134" key="GridCell.Tab.0.bottom" timestamp="1586131111294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1564" height="82" key="GridCell.Tab.0.bottom/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893098125" />
-    <state width="1564" height="82" key="GridCell.Tab.0.center" timestamp="1585893098124">
+    <state width="963" height="134" key="GridCell.Tab.0.bottom/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586131111294" />
+    <state width="963" height="134" key="GridCell.Tab.0.center" timestamp="1586131111294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1564" height="82" key="GridCell.Tab.0.center/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893098124" />
-    <state width="1564" height="82" key="GridCell.Tab.0.left" timestamp="1585893098124">
+    <state width="963" height="134" key="GridCell.Tab.0.center/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586131111294" />
+    <state width="963" height="134" key="GridCell.Tab.0.left" timestamp="1586131111294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1564" height="82" key="GridCell.Tab.0.left/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893098124" />
-    <state width="1564" height="82" key="GridCell.Tab.0.right" timestamp="1585893098125">
+    <state width="963" height="134" key="GridCell.Tab.0.left/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586131111294" />
+    <state width="963" height="134" key="GridCell.Tab.0.right" timestamp="1586131111294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1564" height="82" key="GridCell.Tab.0.right/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893098125" />
-    <state width="1564" height="82" key="GridCell.Tab.1.bottom" timestamp="1585893098125">
+    <state width="963" height="134" key="GridCell.Tab.0.right/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586131111294" />
+    <state width="1563" height="355" key="GridCell.Tab.1.bottom" timestamp="1585902673797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1564" height="82" key="GridCell.Tab.1.bottom/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893098125" />
-    <state width="1564" height="82" key="GridCell.Tab.1.center" timestamp="1585893098125">
+    <state width="1563" height="355" key="GridCell.Tab.1.bottom/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585902673797" />
+    <state width="1563" height="355" key="GridCell.Tab.1.center" timestamp="1585902673797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1564" height="82" key="GridCell.Tab.1.center/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893098125" />
-    <state width="1564" height="82" key="GridCell.Tab.1.left" timestamp="1585893098125">
+    <state width="1563" height="355" key="GridCell.Tab.1.center/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585902673797" />
+    <state width="1563" height="355" key="GridCell.Tab.1.left" timestamp="1585902673797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1564" height="82" key="GridCell.Tab.1.left/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893098125" />
-    <state width="1564" height="82" key="GridCell.Tab.1.right" timestamp="1585893098125">
+    <state width="1563" height="355" key="GridCell.Tab.1.left/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585902673797" />
+    <state width="1563" height="355" key="GridCell.Tab.1.right" timestamp="1585902673797">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1564" height="82" key="GridCell.Tab.1.right/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893098125" />
-    <state width="1564" height="82" key="GridCell.Tab.2.bottom" timestamp="1585893098125">
+    <state width="1563" height="355" key="GridCell.Tab.1.right/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585902673797" />
+    <state width="1563" height="355" key="GridCell.Tab.2.bottom" timestamp="1585902673798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1564" height="82" key="GridCell.Tab.2.bottom/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893098125" />
-    <state width="1564" height="82" key="GridCell.Tab.2.center" timestamp="1585893098125">
+    <state width="1563" height="355" key="GridCell.Tab.2.bottom/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585902673798" />
+    <state width="1563" height="355" key="GridCell.Tab.2.center" timestamp="1585902673798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1564" height="82" key="GridCell.Tab.2.center/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893098125" />
-    <state width="1564" height="82" key="GridCell.Tab.2.left" timestamp="1585893098125">
+    <state width="1563" height="355" key="GridCell.Tab.2.center/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585902673798" />
+    <state width="1563" height="355" key="GridCell.Tab.2.left" timestamp="1585902673798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1564" height="82" key="GridCell.Tab.2.left/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893098125" />
-    <state width="1564" height="82" key="GridCell.Tab.2.right" timestamp="1585893098125">
+    <state width="1563" height="355" key="GridCell.Tab.2.left/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585902673798" />
+    <state width="1563" height="355" key="GridCell.Tab.2.right" timestamp="1585902673798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1564" height="82" key="GridCell.Tab.2.right/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893098125" />
+    <state width="1563" height="355" key="GridCell.Tab.2.right/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585902673798" />
     <state width="1876" height="162" key="GridCell.Tab.3.bottom" timestamp="1585298431891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -991,10 +1031,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="389" key="VCS.EditChangelistDialog/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584407020551" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1585814399265">
+    <state x="545" y="251" key="Vcs.Push.Dialog.v2" timestamp="1585893637139">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585814399265" />
+    <state x="545" y="251" key="Vcs.Push.Dialog.v2/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585893637139" />
     <state x="690" y="325" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1585297918401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -1027,10 +1067,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="600" height="440" key="javadoc.popup/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584931170895" />
-    <state x="339" y="40" key="new project wizard" timestamp="1585708520960">
+    <state x="339" y="40" key="new project wizard" timestamp="1585901982548">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="339" y="40" key="new project wizard/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585708520960" />
+    <state x="339" y="40" key="new project wizard/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585901982548" />
+    <state x="702" y="129" key="refactoring.ChangeSignatureDialog" timestamp="1586131321701">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="702" y="129" key="refactoring.ChangeSignatureDialog/1920.-1.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1586131321701" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1585879808403">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

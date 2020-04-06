@@ -38,4 +38,11 @@ public class MemberDAO {
         SqlSession sqlSession = sqlMapper.openSession();
         return sqlSession.selectOne("mapper.member.selectMemberById", id);
     }
+    public int insertMember(MemberVO vo){
+        sqlMapper = getInstance();
+        SqlSession sqlSession = sqlMapper.openSession();
+        int result = sqlSession.insert("mapper.member.insertMember", vo);
+        sqlSession.commit();
+        return result;
+    }
 }
