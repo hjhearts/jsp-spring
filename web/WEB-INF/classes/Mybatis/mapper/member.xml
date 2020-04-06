@@ -33,4 +33,11 @@
         values(#{id}, #{pwd}, #{name}, #{email}, default)
         ]]>
     </insert>
+    <update id="updateMember" parameterType="memberVO">
+        <![CDATA[
+            update t_member
+            set pwd = #{pwd}, name = #{name}, email = #{email}
+            where id = #{id}
+        ]]>
+    </update>
 </mapper>

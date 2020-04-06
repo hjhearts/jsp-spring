@@ -45,4 +45,11 @@ public class MemberDAO {
         sqlSession.commit();
         return result;
     }
+    public int updateMember(MemberVO vo){
+        sqlMapper = getInstance();
+        SqlSession sqlSession = sqlMapper.openSession();
+        int result = sqlSession.update("mapper.member.updateMember",vo);
+        sqlSession.commit();
+        return result;
+    }
 }

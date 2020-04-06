@@ -58,6 +58,20 @@ public class MemberServlet extends HttpServlet {
             addVO.setEmail(email);
             int status = dao.insertMember(addVO);
             nextPage = "mem2.do?action=listMembers";
+        }else if(action.equals("updateMember")){
+            String id = request.getParameter("id");
+            String pwd = request.getParameter("pwd");
+            String name = request.getParameter("name");
+            String email = request.getParameter("email");
+            MemberVO updateVO = new MemberVO();
+            updateVO.setId(id);
+            updateVO.setPwd(pwd);
+            updateVO.setName(name);
+            updateVO.setEmail(email);;
+            dao.updateMember(updateVO);
+            nextPage = "mem2.do?action=listMembers";
+        }else if(action.equals("updateForm")){
+            nextPage = "spring2/updateForm.jsp";
         }
         RequestDispatcher dis = request.getRequestDispatcher(nextPage);
         dis.forward(request, response);

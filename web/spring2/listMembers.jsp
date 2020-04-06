@@ -28,6 +28,7 @@
                 <td>${member.name}</td>
                 <td>${member.email}</td>
                 <td>${member.joinDate}</td>
+                <td><a href="${pageContext.request.contextPath}/mem2.do?action=updateForm&id=${member.id}">수정</a></td>
             </tr>
         </c:forEach>
     </table>
