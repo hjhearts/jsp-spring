@@ -7,21 +7,21 @@
         <property name="prefix" value="/spring2/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-    <bean id="memberController" class="SpringWeb5.controller.MemberControllerImpl">
-        <property name="methodNameResolver" ref="methodResolver"/>
+    <bean id="memberController" class="SpringWeb8.controller.MemberControllerImpl">
+        <property name="methodNameResolver" ref="memberMethodResolver"/>
         <property name="memberService" ref="memberService"/>
     </bean>
-    <bean id="methodResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+    <bean id="memberMethodResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
         <property name="mappings">
             <props>
                 <prop key="/member/listMembers.do">listMembers</prop>
                 <prop key="/member/addMember.do">addMember</prop>
+                <prop key="/member/removeMember.do">removeMember</prop>
                 <prop key="/member/memberForm.do">memberForm</prop>
-                <prop key="/member/memberDetail.do">memberDetail</prop>
             </props>
         </property>
     </bean>
-    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+    <bean id="memberUrlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
         <property name="mappings">
             <props>
                 <prop key="/member/*.do">memberController</prop>

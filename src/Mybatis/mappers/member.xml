@@ -12,18 +12,18 @@
     </resultMap>
     <sql id="selectTMember">
         <![CDATA[
-            select * from t_member
+        select * from t_member
         ]]>
     </sql>
     <select id="selectAllMemberList" resultMap="memResult">
         <![CDATA[
-            select * from t_member order by joinDate DESC
+        select * from t_member order by joinDate DESC
         ]]>
     </select>
     <select id="selectMemberById" resultType="memberVO" parameterType="String">
         <![CDATA[
-            select * from t_member
-            where id = #{id}
+        select * from t_member
+        where id = #{id}
         ]]>
     </select>
     <select id="selectMemberByPwd" resultMap="memResult" parameterType="String">
@@ -40,15 +40,15 @@
     </insert>
     <update id="updateMember" parameterType="memberVO">
         <![CDATA[
-            update t_member
-            set pwd = #{pwd}, name = #{name}, email = #{email}
-            where id = #{id}
+        update t_member
+        set pwd = #{pwd}, name = #{name}, email = #{email}
+        where id = #{id}
         ]]>
     </update>
     <delete id="deleteMember" parameterType="String">
         <![CDATA[
-            delete from t_member
-            where id = #{id}
+        delete from t_member
+        where id = #{id}
         ]]>
     </delete>
     <select id="searchMember" parameterType="memberVO" resultMap="memResult">
@@ -79,9 +79,9 @@
         <foreach collection="list" item="item" open="INSERT ALL" separator=" " close="SELECT * FROM DUAL">
             into t_member(id, pwd, name, email)
             values (#{item.id},
-                    #{item.pwd},
-                    #{item.name},
-                    #{item.email})
+            #{item.pwd},
+            #{item.name},
+            #{item.email})
         </foreach>
     </insert>
 </mapper>

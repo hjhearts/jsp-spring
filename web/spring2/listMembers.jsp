@@ -30,8 +30,7 @@
                 <td>${member.name}</td>
                 <td>${member.email}</td>
                 <td>${member.joinDate}</td>
-                <td><a href="${pageContext.request.contextPath}/mem2.do?action=updateForm&id=${member.id}">수정</a></td>
-                <td><a href="${pageContext.request.contextPath}/mem2.do?action=deleteMember&id=${member.id}">삭제</a></td>
+                <td><a href="${pageContext.request.contextPath}/member/removeMember.do?id=${member.id}">삭제</a></td>
             </tr>
         </c:forEach>
     </table>

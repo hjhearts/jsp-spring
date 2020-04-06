@@ -10,6 +10,11 @@
         <result property="email" column="email"/>
         <result property="joinDate" column="joinDate"/>
     </resultMap>
+    <sql id="selectTMember">
+        <![CDATA[
+            select * from t_member
+        ]]>
+    </sql>
     <select id="selectAllMemberList" resultMap="memResult">
         <![CDATA[
             select * from t_member order by joinDate DESC
@@ -47,9 +52,7 @@
         ]]>
     </delete>
     <select id="searchMember" parameterType="memberVO" resultMap="memResult">
-        <![CDATA[
-            select * from t_member
-        ]]>
+        <include refid="selectTMember"/>
         <where>
             <choose>
                 <when test="name != null and name != '' and email != null and email != ''">
@@ -65,9 +68,7 @@
         </where>
     </select>
     <select id="selectForEach" resultMap="memResult" parameterType="java.util.Map">
-        <![CDATA[
-            select * from t_member
-        ]]>
+        <include refid="selectTMember"/>
         where name in
         <foreach collection="list" item="item" open="(" separator="," close=")">
             #{item}

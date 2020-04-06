@@ -68,6 +68,7 @@
             /WEB-INF/action-service.xml
             /WEB-INF/action-datasource.xml
             /WEB-INF/action-servlet.xml
+            /WEB-INF/action-mybatis.xml
         </param-value>
     </context-param>
     <error-page>
