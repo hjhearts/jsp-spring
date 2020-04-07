@@ -18,7 +18,7 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
-    <data-source name="Oracle - @localhost" uuid="59f3803b-7f6d-4662-ab94-35f08ce02a4f">
+    <data-source name="SCOTT@localhost" uuid="59f3803b-7f6d-4662-ab94-35f08ce02a4f">
       <database-info product="Oracle" version="Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production&#10;With the Partitioning, OLAP, Data Mining and Real Application Testing options" jdbc-version="4.2" driver-name="Oracle JDBC driver" driver-version="12.2.0.1.0" dbms="ORACLE" exact-version="11.2.0.1.0" exact-driver-version="12.2">
         <extra-name-characters>$#</extra-name-characters>
         <identifier-quote-string>&quot;</identifier-quote-string>
@@ -30,8 +30,6 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
-            <name qname="HJHEARTS" />
-            <name qname="PUBLIC" />
             <name qname="SCOTT" />
           </node>
         </introspection-scope>

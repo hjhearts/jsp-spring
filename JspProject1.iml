@@ -28,6 +28,11 @@
           <file>file://$MODULE_DIR$/AOPTest.xml</file>
           <file>file://$MODULE_DIR$/AOPTest1.xml</file>
         </fileset>
+        <fileset id="fileset4" name="Account Service" removed="false">
+          <file>file://$MODULE_DIR$/web/WEB-INF/config/action-service.xml</file>
+          <file>file://$MODULE_DIR$/web/WEB-INF/config/action-mybatis.xml</file>
+          <file>file://$MODULE_DIR$/web/WEB-INF/config/action-servlet.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>

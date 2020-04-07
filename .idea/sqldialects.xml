@@ -4,6 +4,6 @@
     <file url="file://$PROJECT_DIR$" dialect="MySQL" />
   </component>
   <component name="SqlResolveMappings">
-    <file url="file://$PROJECT_DIR$/src/myweb2/MemberDAO.java" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;name&quot;:{     &quot;@qname&quot;:&quot;ffc82a2a-3a7d-40b2-a920-259f3f546d73&quot;    },    &quot;group&quot;:{     &quot;@kind&quot;:&quot;schema&quot;,     &quot;node&quot;:{      &quot;name&quot;:{       &quot;@qname&quot;:&quot;mydb&quot;      }     }    }   }  } }}" />
+    <file url="PROJECT" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;@negative&quot;:&quot;1&quot;   }  } }}" />
   </component>
 </project>

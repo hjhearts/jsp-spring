@@ -10,7 +10,7 @@
         <property name="serverTimezone" value="UTC" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="Oracle - @localhost" uuid="59f3803b-7f6d-4662-ab94-35f08ce02a4f">
+    <data-source source="LOCAL" name="SCOTT@localhost" uuid="59f3803b-7f6d-4662-ab94-35f08ce02a4f">
       <driver-ref>oracle</driver-ref>
       <synchronize>true</synchronize>
       <auto-commit>false</auto-commit>

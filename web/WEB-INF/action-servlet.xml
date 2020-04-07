@@ -4,27 +4,24 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
-        <property name="prefix" value="/spring2/"/>
+        <property name="prefix" value="/spring3/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-    <bean id="memberController" class="SpringWeb8.controller.MemberControllerImpl">
-        <property name="methodNameResolver" ref="memberMethodResolver"/>
-        <property name="memberService" ref="memberService"/>
+    <bean id="accController" class="SpringWeb9.account.AccountController">
+        <property name="methodNameResolver" ref="methodResolver"/>
+        <property name="accService" ref="accService"/>
     </bean>
-    <bean id="memberMethodResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+    <bean id="methodResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
         <property name="mappings">
             <props>
-                <prop key="/member/listMembers.do">listMembers</prop>
-                <prop key="/member/addMember.do">addMember</prop>
-                <prop key="/member/removeMember.do">removeMember</prop>
-                <prop key="/member/memberForm.do">memberForm</prop>
+                <prop key="/account/sendMoney.do">sendMoney</prop>
             </props>
         </property>
     </bean>
-    <bean id="memberUrlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
         <property name="mappings">
             <props>
-                <prop key="/member/*.do">memberController</prop>
+                <prop key="/account/*.do">accController</prop>
             </props>
         </property>
     </bean>

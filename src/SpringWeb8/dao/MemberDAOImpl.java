@@ -2,7 +2,6 @@ package SpringWeb8.dao;
 
 import SpringWeb8.vo.MemberVO;
 import org.apache.ibatis.session.SqlSession;
-import org.mybatis.spring.SqlSessionTemplate;
 
 import java.util.List;
 
