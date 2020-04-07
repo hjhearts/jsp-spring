@@ -7,7 +7,7 @@ http://www.springframework.org/schema/tx
     <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
-    <bean id="propertyPlaceHolderConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <bean id="propertyPlaceHolderConfigurer" class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
         <property name="location" value="/WEB-INF/config/jdbc.properties"/>
     </bean>
     <bean id="dataSource" class="org.apache.ibatis.datasource.pooled.PooledDataSource">
